@@ -14,16 +14,17 @@ import java.util.Scanner;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
+        
         Scanner scan = new Scanner(System.in);
-	    int opçao;
+	int opçao;
 
 	    do {
 	    
-                    // System.out.println("   ____________________________");
-		    System.out.println("\n\tMenu da Calculadora\n");
-		    // System.out.print("   ____________________________\n");
+                    System.out.println("   ____________________________");
+		    System.out.println("\n\tMenu da Calculadora");
+		    System.out.print("   ____________________________\n");
 		
-		    System.out.printf("[1] Adição\n");
+		    System.out.printf("\n[1] Adição\n");
 		    System.out.println("[2] Subtração");
 		    System.out.println("[3] Multiplicação");
 		    System.out.printf("[4] Divisão\n");
