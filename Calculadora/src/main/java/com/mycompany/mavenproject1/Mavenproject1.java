@@ -17,6 +17,12 @@ public class Mavenproject1 {
         
         Scanner scan = new Scanner(System.in);
 	int opçao;
+        float num1;
+        float num2;
+        float soma;
+        float sub;
+        float mult;
+        float div;
 
 	    do {
 	    
@@ -40,23 +46,69 @@ public class Mavenproject1 {
 		            case 0:
 		                System.out.println("\nSaindo...");
 		                break;
+                                
 		            case 1:
 		                System.out.println("\nOpção escolhida: Adição [1]");
+                                
+                                System.out.printf("\nDigite o Primeiro Número: ");
+                                num1 = scan.nextFloat();
+                                
+                                System.out.printf("Digite o Segundo Número: ");
+                                num2 = scan.nextFloat();
+                                
+                                soma = num1 + num2;
+                                
+                                System.out.printf("\nA Soma foi: %.2f\n\n", soma);
 		                break;
+                                
 		            case 2:
-		                 System.out.println("\nOpção escolhida: Subtração [2]");
-		                 break;
-		            case 3:
-		                  System.out.println("\nOpção escolhida: Multiplicação [3]");
-		                  break;
-		             case 4: 
-		                System.out.println("\nOpção escolhida: Divisão [4]");
+		                System.out.println("\nOpção escolhida: Subtração [2]");
+                                 
+                                System.out.printf("\nDigite o Primeiro Número: ");
+                                num1 = scan.nextFloat();
+                                 
+                                System.out.printf("Digite o Segundo Número: ");
+                                num2 = scan.nextFloat();
+                                 
+                                sub = num1 - num2;
+                                 
+                                System.out.printf("\nA Subtração foi: %.2f\n\n", sub);
 		                break;
+                                 
+		            case 3:
+		                System.out.println("\nOpção escolhida: Multiplicação [3]");
+                                  
+                                System.out.printf("\nDigite o Primeiro Número: ");
+                                num1 = scan.nextFloat();
+                                  
+                                System.out.printf("Digite o Segundo Número: ");
+                                num2 = scan.nextFloat();
+                                  
+                                mult = num1 * num2;
+                                  
+                                System.out.printf("\nA Multiplicação foi: %.3f\n\n", mult);
+		                break;
+                                  
+		             case 4: 
+                                System.out.println("\nOpção escolhida: Divisão [4]");
+                                
+                                System.out.printf("\nDigite o Primeiro Número: ");
+                                num1 = scan.nextFloat();
+                                
+                                System.out.printf("Digite o Segundo Número: ");
+                                num2 = scan.nextFloat();
+                                
+                                div = num1 / num2;
+                                
+                                System.out.printf("\nA Divisão foi: %.3f\n\n", div);
+                                break;
+                                    
 		              default:
-		                 System.err.println("\nError. Escolha um número válido (0 a 4)");
-		                    break;
+                                System.err.println("\nError. Escolha um número válido (0 a 4)");
+                                break;
 	    	        }       
         } while (opçao != 0);
+            
         scan.close();
     }
 }
