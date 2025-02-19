@@ -16,24 +16,32 @@ public class Mavenproject1 {
     /* public static void Funçao() {
         System.out.println("\nFunção OK");} */
     
-    public static float Soma(float num1, float num2){
-        float soma = num1 + num2;
-        return soma;
+    public static float Soma(float x, float y){
+        /* float soma = x + y;
+        return soma; */
+        
+        return x + y;
     }
     
-    public static float Menos(float num1, float num2) {
-        float sub = num1 - num2;
-        return sub;
+    public static float Menos(float x, float y) {
+        /* float sub = x - y;
+        return sub; */
+        
+        return x - y;
     }
     
-    public static float Vezes(float num1, float num2){
-        float mult = num1 * num2;
-        return mult;
+    public static float Vezes(float x, float y){
+        /* float mult = x * y;
+        return mult; */
+        
+        return x * y;
     }
     
-    public static float Div(float num1, float num2) {
-        float div = num1 / num2;
-        return div;
+    public static float Div(float x, float y) {
+        /* float div = x / y;
+        return div; */
+        
+        return x / y;
     }
 
     public static void main(String[] args) {
