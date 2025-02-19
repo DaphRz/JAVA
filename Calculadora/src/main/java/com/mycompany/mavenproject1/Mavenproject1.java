@@ -12,17 +12,42 @@ package com.mycompany.mavenproject1;
 import java.util.Scanner;
 
 public class Mavenproject1 {
+    
+    /* public static void Funçao() {
+        System.out.println("\nFunção OK");} */
+    
+    public static float Soma(float num1, float num2){
+        float soma = num1 + num2;
+        return soma;
+    }
+    
+    public static float Menos(float num1, float num2) {
+        float sub = num1 - num2;
+        return sub;
+    }
+    
+    public static float Vezes(float num1, float num2){
+        float mult = num1 * num2;
+        return mult;
+    }
+    
+    public static float Div(float num1, float num2) {
+        float div = num1 / num2;
+        return div;
+    }
 
     public static void main(String[] args) {
+        
+        // Funçao(); - chamada da função
         
         Scanner scan = new Scanner(System.in);
 	int opçao;
         float num1;
         float num2;
-        float soma;
-        float sub;
-        float mult;
-        float div;
+        // float soma;
+        // float sub;
+        // float mult;
+        // float div;
 
 	    do {
 	    
@@ -56,9 +81,9 @@ public class Mavenproject1 {
                                 System.out.printf("Digite o Segundo Número: ");
                                 num2 = scan.nextFloat();
                                 
-                                soma = num1 + num2;
+                                // soma = num1 + num2;
                                 
-                                System.out.printf("\nA Soma foi: %.2f\n\n", soma);
+                                System.out.printf("\nA Soma foi: %.2f\n\n", Soma(num1, num2));
 		                break;
                                 
 		            case 2:
@@ -70,9 +95,9 @@ public class Mavenproject1 {
                                 System.out.printf("Digite o Segundo Número: ");
                                 num2 = scan.nextFloat();
                                  
-                                sub = num1 - num2;
+                                // sub = num1 - num2;
                                  
-                                System.out.printf("\nA Subtração foi: %.2f\n\n", sub);
+                                System.out.printf("\nA Subtração foi: %.2f\n\n", Menos(num1, num2));
 		                break;
                                  
 		            case 3:
@@ -84,9 +109,9 @@ public class Mavenproject1 {
                                 System.out.printf("Digite o Segundo Número: ");
                                 num2 = scan.nextFloat();
                                   
-                                mult = num1 * num2;
+                                // mult = num1 * num2;
                                   
-                                System.out.printf("\nA Multiplicação foi: %.2f\n\n", mult);
+                                System.out.printf("\nA Multiplicação foi: %.2f\n\n", Vezes(num1, num2));
 		                break;
                                   
 		             case 4: 
@@ -103,9 +128,9 @@ public class Mavenproject1 {
                                     break;
                                 }
                                 
-                                div = num1 / num2;
+                                // div = num1 / num2;
                                 
-                                System.out.printf("\nA Divisão foi: %.3f\n\n", div);
+                                System.out.printf("\nA Divisão foi: %.3f\n\n", Div(num1,num2));
                                 break;
                                     
 		              default:
