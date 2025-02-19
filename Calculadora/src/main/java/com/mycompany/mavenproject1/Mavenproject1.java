@@ -86,7 +86,7 @@ public class Mavenproject1 {
                                   
                                 mult = num1 * num2;
                                   
-                                System.out.printf("\nA Multiplicação foi: %.3f\n\n", mult);
+                                System.out.printf("\nA Multiplicação foi: %.2f\n\n", mult);
 		                break;
                                   
 		             case 4: 
@@ -97,6 +97,11 @@ public class Mavenproject1 {
                                 
                                 System.out.printf("Digite o Segundo Número: ");
                                 num2 = scan.nextFloat();
+                                
+                                if (num2 == 0){
+                                    System.out.println("\nA Divisão por 0 não é válida.");
+                                    break;
+                                }
                                 
                                 div = num1 / num2;
                                 
