@@ -23,10 +23,13 @@ public class Conta {
         cliente.sobrenome = "Kristov";
         
         conta.titular = cliente;
+        
         conta.titular = new Cliente();
         conta.titular.cpf = "156.812.147-45";
         conta.titular.nome = "Clintow";
         conta.titular.sobrenome = "Kristov";
+        
+        
         
         Scanner scan = new Scanner(System.in);
         
@@ -50,7 +53,7 @@ public class Conta {
         
         System.out.print("\nNome do seu Cônjuge: ");
         conta.titular.conjuge = scan.nextLine();
-        
+                
         System.out.print("Digite o Número da sua Conta: ");
         
         try {
