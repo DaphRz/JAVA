@@ -13,8 +13,9 @@ public class ClasseConta {
     String nome;
     double limite1, limite2;
     double saldo;
-    
     double deposito;
+    
+    Cliente titular;
         
     /*public*/ void sacar(double v){  // v = valor
         saldo = saldo - v; // saldo -= v

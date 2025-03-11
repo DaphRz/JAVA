@@ -17,6 +17,17 @@ public class Conta {
         ClasseConta conta;
         conta = new ClasseConta();
         
+        Cliente cliente = new Cliente();
+        cliente.cpf = "156.812.147-45";
+        cliente.nome = "Clintow";
+        cliente.sobrenome = "Kristov";
+        
+        conta.titular = cliente;
+        conta.titular = new Cliente();
+        conta.titular.cpf = "156.812.147-45";
+        conta.titular.nome = "Clintow";
+        conta.titular.sobrenome = "Kristov";
+        
         Scanner scan = new Scanner(System.in);
         
         // posso declarar todos os objetos aqui: nome, numero, ...
@@ -36,6 +47,9 @@ public class Conta {
             
             System.exit(0);
         }
+        
+        System.out.print("\nNome do seu Cônjuge: ");
+        conta.titular.conjuge = scan.nextLine();
         
         System.out.print("Digite o Número da sua Conta: ");
         
