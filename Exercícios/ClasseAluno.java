@@ -9,6 +9,9 @@ package com.mycompany.exercicios;
  * @author alunolab11
  */
 public class ClasseAluno {
+
+    private static int quantAlunos = 0;
+
     private String matricula;
     private String nome;
     private String curso;
@@ -17,8 +20,9 @@ public class ClasseAluno {
     private double nota1B;
     private double nota2B;
     private double notaFinal;
-    
-    // public static int quantAlunos = matricula++;
+
+    public ClasseAluno() {
+    }
     
     public ClasseAluno(String nome,String curso, String turma, int periodo, 
             double nota1B, double nota2B) {
@@ -32,14 +36,8 @@ public class ClasseAluno {
         nota1B + nota2B = this.notaFinal;
     }
     
-    public ClasseAluno() {
-    }
-    
     public String getMatricula() {
         return matricula;
-    }
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
     }
     
     public String getNome() {
