@@ -4,6 +4,10 @@
 
 package com.mycompany.exercicioprova1;
 
+import java.util.Scanner;
+import java.time.Year;
+import java.util.Random;
+
 /**
  *
  * @author daphne
@@ -11,6 +15,20 @@ package com.mycompany.exercicioprova1;
 public class ExercicioProva1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Scanner scan = new Scanner(System.in);
+         
+        ClasseAluno aluno = new ClasseAluno("daphne","Ciencia da Computação", 
+                                             "CC3Mc",3,9.8,7.8);
+         
+        Random random = new Random();
+        int numero = random.nextInt(10000);
+        
+        String matricula = String.format("%d%04d", Year.now().getValue(), numero);
+         
+        aluno.setMatricula(matricula);
+                 
+        System.out.println("Matrícula: "+aluno.getMatricula());
+        System.out.println("Nome: "+aluno.getNome());
     }
 }
