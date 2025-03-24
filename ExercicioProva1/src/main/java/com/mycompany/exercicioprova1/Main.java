@@ -32,7 +32,9 @@ public class Main {
         System.out.println("Nota 1B: "+aluno.getNota1B());
         System.out.println("Nota 2B: "+aluno.getNota2B()+"\n");
         System.out.println("Nota Final: "+aluno.getGerarNotaFinal());
-        System.out.println("Passou? "+aluno.passar("CC4Mc",4));
+        System.out.println("Passou? "+aluno.passar("CC4Mc",4)+"\n");
+        
+        System.out.println("Nova Turma: "+aluno.getTurma()+"\n"+"Novo Período: "+aluno.getPeriodo());
         
         System.out.println("\nTotal Alunos: "+ClassAluno.getquantAlunos());
     }
