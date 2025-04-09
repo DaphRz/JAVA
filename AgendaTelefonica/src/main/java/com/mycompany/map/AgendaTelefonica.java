@@ -35,7 +35,7 @@ public class AgendaTelefonica {
     }
     
     public void imprimir(){
-        System.out.println(mapaAgenda);
+        System.out.println("\n"+mapaAgenda);
         System.out.println("\nTamanho da Agenda Telefônica: "+tamanho);
     }
 }

@@ -13,7 +13,7 @@ public class Map {
         agenda.inserir("Daphne","28 999515636");
         agenda.inserir("Maria Carla","28 999008877");
         
-        System.out.println("O Número é: "+agenda.buscarNumero("Daphne"));
+        System.out.println("\nO Número é: "+agenda.buscarNumero("Daphne"));
         
         agenda.remover("Maria Carla");
         
