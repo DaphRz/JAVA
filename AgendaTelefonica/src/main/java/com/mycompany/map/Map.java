@@ -10,10 +10,12 @@ public class Map {
         AgendaTelefonica agenda = new AgendaTelefonica();
         //Contato c1 = new Contato("Daphne","28 999515636");
         
+        System.out.println("\n\t----- AGENDA TELEFÔNICA -----");
+        
         agenda.inserir("Daphne","28 999515636");
         agenda.inserir("Maria Carla","28 999008877");
         
-        System.out.println("\nO Número é: "+agenda.buscarNumero("Daphne"));
+        System.out.println("\nO Número é: "+agenda.buscar("Daphne"));
         
         agenda.remover("Maria Carla");
         
