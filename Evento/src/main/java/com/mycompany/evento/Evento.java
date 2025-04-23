@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.evento;
 
 import java.util.HashSet;
@@ -20,8 +17,28 @@ public class Evento {
         return participantes.add(p);
     }
     
-    public boolean remover(String email){
-        return participantes.removeIf(p -> p.getEmail().equals(email));
+       /*  public void adicionar(Participante p){
+            boolean retorno = participantes.add(p);
+        
+            if (retorno == true){
+                System.out.println("Participante Adicionado.");
+            }
+            else{
+                System.out.println("Participante já Cadastrado.");
+            }} */
+    
+    /* public boolean remover(String email){
+        return participantes.removeIf(p -> p.getEmail().equals(email)); } */
+    
+    public void remover(Participante p){
+        boolean retorno = participantes.remove(p);
+        
+        if(retorno == true){
+            System.out.println("\nParticipante Removido");
+        }
+        else{
+            System.out.println("Participante não Encontrado");
+        }
     }
     
     public void exibir(){

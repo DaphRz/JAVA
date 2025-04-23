@@ -12,7 +12,7 @@ public class Main {
         
         Participante p = new Participante("Daphne","daphne@email.com");
         Participante p1 = new Participante("Carol","carol@email.com");
-        Participante p2 = new Participante("Vanusa","daphne@email.com");
+        Participante p2 = new Participante("Vanusa","vanusa@email.com");
                 
         e.exibir();
         e.adicionar(p);
@@ -25,7 +25,10 @@ public class Main {
         e1.adicionar(p2);
         e1.exibir();
         
-        e1.remover("daphne@email.com");
-        e1.exibir();
+        //e1.remover("daphne@email.com");
+        e1.remover(p);
+        e1.remover(p);
+        
+        //e1.exibir();
     }
 }
