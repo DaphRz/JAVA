@@ -6,25 +6,30 @@ import java.util.ArrayList;
 
 public class Professor {
     private String nome;
-    private List <Aluno> alunos;
+    private List <Aluno> alunos = new ArrayList();
     
     public Professor(String nome){
         this.nome = nome;
-        alunos = new ArrayList();
     }
     
-    public Professor(){
-        
+    public String getNome(){
+        return nome;
     }
     
     public void addAluno(Aluno a){
-        boolean retorno = alunos.add(a);
         
-        for (Aluno a : alunos){
-            if(a.getNome().equals())
+        for (Aluno aluno : alunos){
+            if(aluno.getNome().equals(a.getNome())) {
+                System.out.println("Aluno já adicionado.");
+                return;
+            }
         }
-        else{
-            System.out.println("Aluno já Adicionado");
+        
+        alunos.add(a);
+        
+        if (a.getProf() != this){
+            a.setProfessor(this);
         }
+        System.out.println("Aluno Adicionado");
     }
 }

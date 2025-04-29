@@ -10,8 +10,13 @@ public class Turma {
         Professor p = new Professor("Cássio");
         Professor p1 = new Professor("Emanuella");
         
+        System.out.println("\n------ TURMA ------\n");
+        
         p.addAluno(a);
         p.addAluno(a1);
         p.addAluno(a);
+        
+        p1.addAluno(a1);
+        a1.setProfessor(p1);
     }
 }

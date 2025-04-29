@@ -12,11 +12,18 @@ public class Aluno {
         this.nome = nome;
     }
     
-    public void setProfessor(Professor p){
-        p = new Professor();
-    }
-    
     public String getNome(){
         return nome;
+    }
+    
+    public Professor getProf(){
+        return p;
+    }
+    
+    public void setProfessor(Professor p){
+        if (this.p != p){
+            this.p = p;
+            //p.addAluno(this);
+        }
     }
 }
