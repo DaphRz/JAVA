@@ -1,4 +1,3 @@
-
 package com.mycompany.turma;
 
 import java.util.List;
@@ -20,7 +19,7 @@ public class Professor {
         
         for (Aluno aluno : alunos){
             if(aluno.getNome().equals(a.getNome())) {
-                System.out.println("Aluno já adicionado.");
+                System.out.println("Aluno já adicionado");
                 return;
             }
         }
@@ -31,5 +30,9 @@ public class Professor {
             a.setProfessor(this);
         }
         System.out.println("Aluno Adicionado");
+    }
+    
+    public boolean temAluno(Aluno a){
+        return alunos.contains(a);
     }
 }

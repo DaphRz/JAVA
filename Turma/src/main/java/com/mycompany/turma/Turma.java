@@ -18,5 +18,6 @@ public class Turma {
         
         p1.addAluno(a1);
         a1.setProfessor(p1);
+        a.setProfessor(p1);
     }
 }
