@@ -49,4 +49,16 @@ public class Professor {
             System.out.println("Aluno nao encontrado");
         }
     }
+    
+    public void imprimir(){
+        
+        if(!alunos.isEmpty()){
+            for (int i = 0; i < alunos.size();i++){
+                System.out.println("Professor: "+nome+ " "+(i+1)+" "+alunos.get(i).getNome());
+            }
+        }
+        else {
+            System.out.println("Lista vazia");
+        }
+    }
 }

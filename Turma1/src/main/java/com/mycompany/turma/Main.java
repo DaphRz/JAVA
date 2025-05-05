@@ -29,5 +29,23 @@ public class Main {
         
         a.removerProf(p);
         a1.removerProf(p);
+        
+        System.out.println();
+        
+        p.addAluno(a);
+        p.addAluno(a1);
+        
+        System.out.println();
+        
+        p.imprimir();
+        
+        System.out.println();
+        
+        a.removerProf(p);
+        a1.removerProf(p);
+        
+        System.out.println();
+        
+        p.imprimir();
     }
 }

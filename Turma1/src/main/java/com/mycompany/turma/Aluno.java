@@ -16,6 +16,10 @@ public class Aluno {
         profs = new ArrayList();
     }
     
+    public String getNome(){
+        return nome;
+    }
+    
     public boolean temProf(Professor p){
         return profs.contains(p);
     }
