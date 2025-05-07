@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class Autor {
     private String nome, abreviatura;
     
-    private List<Contato> cntt = new ArrayList();
-    private List<Livro> ls = new ArrayList();;
+    private List<Contato> cntt = new ArrayList<>();
+    private List<Livro> ls = new ArrayList<>();
     
     public Autor(String n, String ab){
         nome = n;

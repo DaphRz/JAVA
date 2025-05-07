@@ -37,8 +37,15 @@ public class Livro {
         }
     }
     
+    // eu nao precisaria desse
     public void setEdit(Editora e){
-        this.e = e;
-        System.out.println("OK");
+        
+        if(this.e != null){
+            System.out.println("Editora já setada");
+        }
+        else{
+            this.e = e;
+            System.out.println("OK");
+        }
     }
 }

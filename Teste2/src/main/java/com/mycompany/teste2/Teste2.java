@@ -15,6 +15,7 @@ public class Teste2 {
         
         l.addAutor(a);
         l1.addAutor(a1);
+        l.addAutor(a);
         
         System.out.println();
         
@@ -25,6 +26,7 @@ public class Teste2 {
         
         l.setEdit(e);
         l1.setEdit(e1);
+        l.setEdit(e);
         
         System.out.println();
         
