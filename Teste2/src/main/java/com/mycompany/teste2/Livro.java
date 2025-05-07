@@ -15,11 +15,30 @@ public class Livro {
         titulo = t;
         ano = a;
         this.e = e;
+        as = new ArrayList();
+    }
+    
+    public boolean temAutor(Autor a){
+        return as.contains(a);
     }
     
     public void addAutor(Autor a){
-        as = new ArrayList();
-        as.add(a);
+        
+        if(!this.temAutor(a)){
+            as.add(a);  
+            
+            if(!a.temLivro(this)){
+                a.addLivro(this);
+                System.out.println("OK");
+            }
+        }
+        else{
+            System.out.println("Livro já add ao Autor");
+        }
+    }
+    
+    public void setEdit(Editora e){
+        this.e = e;
         System.out.println("OK");
     }
 }

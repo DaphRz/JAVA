@@ -20,5 +20,15 @@ public class Teste2 {
         
         a.addCntt("cell", "28999");
         a.addCntt("cell", "28888");
+        
+        System.out.println();
+        
+        l.setEdit(e);
+        l1.setEdit(e1);
+        
+        System.out.println();
+        
+        a.addLivro(l);
+        a1.addLivro(l1);
     }
 }
