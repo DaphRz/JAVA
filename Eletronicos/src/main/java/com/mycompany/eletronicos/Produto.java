@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.eletronicos;
 
-/**
- *
- * @author alunolab08
- */
 public class Produto {
-    
+    private int id;
+    private String nome, marca;
+    private float preco;
 }
