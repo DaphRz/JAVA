@@ -36,7 +36,7 @@ public class Cliente {
             return;
         }
 
-        System.out.println("Digite um número válido (1 ou 2)");
+        System.out.println("Digite um número válido (1 ou 2)\n");
     }
     
     public void mostrarSaldos() {

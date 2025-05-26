@@ -1,7 +1,7 @@
 
 package com.mycompany.heranca;
 
-public class Conta {
+public abstract class Conta {
     protected double saldo;
     protected int id;
     
@@ -12,21 +12,15 @@ public class Conta {
         this.id = id;
     }
     
-    public void sacar(int i){
-        saldo = saldo - i;
-        System.out.println("Saque concluído");
-        System.out.println("Valor atualizado: R$"+saldo);
-    }
-    
+    public abstract void sacar(double i);
+       
     public void depositar(int i){
         saldo = saldo + i;
         System.out.println("Depósito concluído");
         System.out.println("Valor atualizado: R$"+saldo);
     }
     
-    public void aplicarRendimento(){
-        
-    }
+    public abstract void aplicarRendimento();
     
     @Override
     public String toString(){
