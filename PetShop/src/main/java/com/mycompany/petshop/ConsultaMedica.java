@@ -1,6 +1,6 @@
 
 package com.mycompany.petshop;
 
-public class ConsultaMedica implements ServicoPet {
-    
+public interface ConsultaMedica {
+    public void consulta();
 }

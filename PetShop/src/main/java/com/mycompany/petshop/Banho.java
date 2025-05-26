@@ -1,6 +1,6 @@
 
 package com.mycompany.petshop;
 
-public class Banho implements ServicoPet {
-    
+public interface Banho {
+    public void banho();
 }
